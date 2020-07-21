@@ -35,7 +35,11 @@ li:hover {
 #menuicon {
     display:none;
 }
- 
+
+.dropdown-content {
+  display:none;
+}
+
 h1 {
   margin-top:10px;
   font-family:playfair Display;
@@ -120,7 +124,7 @@ footer {
 }
 
 button {
-  margin-left:0.25em;
+  margin-left:0.35em;
   margin-top:0.25em;
   margin-bottom:0.25em;
   padding: 0.45em;
@@ -135,18 +139,65 @@ button:hover {
   color:#313131;
 }
 
+
+
+
 @media only screen and (max-width: 991px) {
   .shoppingimg {
-    width:400px;
+    width:550px;
     height:auto;
     margin:auto;
     display:block;
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1104px) {
+  .col-md-3 {
+    width:800px;
+  }
+
+  .row img {
+    padding-right:20px;
+  }
+  
+  button {
+    margin-left:0.5em;
+    margin-top:0.5em;
+    padding-left:20px;
+    padding-right:20px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
   nav ul{
     display:none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    float:right;
+    z-index:100;
+    font-size:18px;
+    list-style:none;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F8E3D5;
+
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    color: #313131;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
   }
 
   #menuicon {

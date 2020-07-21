@@ -175,11 +175,11 @@ button:hover {
   
   .dropdown {
     position: relative;
-    display: inline-block;
-    float:right;
+    float:left;
     z-index:100;
     font-size:18px;
     list-style:none;
+    padding-left:20px;
   }
   
   .dropdown-content {

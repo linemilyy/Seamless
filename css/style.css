@@ -52,6 +52,8 @@ h1 {
 
 .container1 {
   background-color:#61372C;
+  padding-left:10%;
+  padding-right:10%;
   padding-top: 5%;
   padding-bottom: 5%;
 }
@@ -140,10 +142,19 @@ button:hover {
   color:#313131;
 }
 
+@media only screen and (max-width: 1535px) {
+  .container1 {
+    padding-left:0%;
+    padding-right:0%;
+  }
+}
 
+@media only screen and (max-width: 1070px) {
+  .container1 {
+    padding-left:0%;
+    padding-right:0%;
+  }
 
-
-@media only screen and (max-width: 1066px) {
   .shoppingimg {
     width:550px;
     height:auto;
@@ -152,7 +163,23 @@ button:hover {
   }
 }
 
-@media only screen and (max-width: 1104px) {
+@media only screen and (max-width: 1106px) {
+  .container1 {
+    padding-left:0%;
+    padding-right:0%;
+  }
+  .shoppingimg {
+    width:550px;
+    height:auto;
+    margin:auto;
+    display:block;
+  }
+
+  .container1 {
+    padding-left:0%;
+    padding-right:0%;
+  }
+  
   .col-md-3 {
     width:800px;
   }
@@ -173,7 +200,8 @@ button:hover {
   nav ul{
     display:none;
   }
-  
+
+
   .dropdown {
     position: relative;
     float:left;
